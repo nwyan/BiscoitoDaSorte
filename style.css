@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(45deg, #190361, #bb00ff);
+    animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+    font-family: 'DM Sans', sans-serif;
+    color: #34355B;
+}
+
+main {
+    background: #FFFFFF;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0rem 54rem 55rem, rgba(0, 0, 0, 0.12) 0rem -12rem 30rem, rgba(0, 0, 0, 0.12) 0rem 4rem 6rem, rgba(0, 0, 0, 0.17) 0rem 12rem 13rem, rgba(0, 0, 0, 0.09) 0rem -3rem 5rem;
+
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+
+    width: min(42.8rem, 90%);
+    text-align: center;
+    
+    margin-top: -12rem;
+}
+
+main section {
+    width: 30rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.texts {
+    margin-bottom: 2rem;
+}
+
+.texts h2 {
+    font-size: 2.4rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.texts p {
+    font-size: 1.5rem;
+    margin-top: 1.4rem;
+}
+
+.texts .answer {
+    padding: 1rem;
+    background: #E4EDF1;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 800;
+    box-shadow: rgba(0, 0, 0, 0.45) 1.95px 1.95px 2.6px;
+}
+
+button {
+    border: 0;
+    border-radius: .4rem;
+
+    margin-top: 1.7rem;
+    padding: 1.6rem;
+
+    color: #FFFFFF;
+    background: #FF9500;
+    cursor: pointer;
+
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    background: #e08e1a;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
